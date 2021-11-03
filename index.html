@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>回答ジェネレーター</title>
+    <script src="https://code.createjs.com/easeljs-0.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="main.js"></script>
+</head>
+    <body>
+
+
+
+        <h1>回答ジェネレーター</h1>
+        <dl class="table">
+            <dt>画像</dt>
+            <dd><span><img src="base.png" id="preview1"width="200" height="103"></span><dd>
+            <dd><input type="file" accept="image/*" id="getfile1"><dd>
+            <dt>回答</dt>
+            <dd><textarea name="txt01" id="txt01" rows="4" cols="40"></textarea></dd>
+        <dt>画像</dt>
+        <dd><span><img src="base.png" id="preview2"width="200" height="103"></span><dd>
+        <dd><input type="file" accept="image/*" id="getfile2"><dd>
+        <dt>回答</dt>
+        <dd><textarea name="txt02" id="txt02" rows="4" cols="40"></textarea></dd>
+        <dt>画像</dt>
+        <dd><span><img src="base.png" id="preview3"width="200" height="103"></span><dd>
+        <dd><input type="file" accept="image/*" id="getfile3"><dd>
+        <dt>回答</dt>
+        <dd><textarea name="txt03" id="txt03" rows="4" cols="40"></textarea></dd>
+        <dt>画像</dt>
+        <dd><span><img src="base.png" id="preview4"width="200" height="103"></span><dd>
+        <dd><input type="file" accept="image/*" id="getfile4"><dd>
+        <dt>回答</dt>
+        <dd><textarea name="txt04" id="txt04" rows="4" cols="40"></textarea></dd>
+    </dl>
+        <div class="btn">
+            <button id="update">画像生成</button>
+            <button id="dl">画像を保存</button>
+
+        </div>
+
+        <!-- 出力部分 -->
+        <div class="module">
+            <h2>生成結果</h2>
+            <h1 id="alert" style="color: red"></h1>
+            <canvas id="result" width="945" height="1260"></canvas>
+            
+
+        
+    </body>
+</html>
