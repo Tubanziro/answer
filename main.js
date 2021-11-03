@@ -197,7 +197,7 @@ function chunk(str, n) {
 
 // canvas上のイメージを保存
 function saveCanvas(){
-    var imageType = "image.png";
+    var imageType = "image/png";
     var fileName = "sample.png";
     
     var canvas = document.getElementById("result");
